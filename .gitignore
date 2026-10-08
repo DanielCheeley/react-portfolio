@@ -51,3 +51,9 @@ ehthumbs.db
 .parcel-cache/
 .eslintcache
 .turbo/
+
+# Additional Node tooling outputs
+dist-ssr/
+*.local
+pnpm-debug.log*
+lerna-debug.log*
