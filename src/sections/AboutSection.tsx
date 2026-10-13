@@ -11,18 +11,19 @@ export default function AboutSection() {
             <em>Different tools.</em>
           </h2>
           <p>
-            I like building things, understanding them, and making them work
-            better. Sometimes that means code. Sometimes it means taking a
-            motorcycle down to its frame and rebuilding it.
+            I like building things, understanding them, and seeing how they
+            work. Sometimes that means code. Sometimes it involves getting my
+            hands dirty a bit.
           </p>
           <p>
             Outside of software, I tinker with circuitry, play guitar and piano,
-            and spend time outdoors. Snowboarding is one of my favorite ways to
-            step away from the screen.
+            play with 3D modeling and spend time outdoors. Snowboarding is one
+            of my favorite ways to step away from the screen.
           </p>
           <div className="interest-list">
             <span>Mechanics & circuitry</span>
             <span>Guitar & piano</span>
+            <span>3D Modeling</span>
             <span>Snowboarding & outdoors</span>
           </div>
         </div>
@@ -41,7 +42,7 @@ export default function AboutSection() {
               loading="lazy"
               alt="Daniel sitting on a snowy slope with his snowboard"
             />
-            <figcaption>Room to recharge.</figcaption>
+            <figcaption>Chasing the crisp air.</figcaption>
           </figure>
         </div>
       </div>

@@ -18,7 +18,7 @@ export const projects = {
       ],
       [
         "A work in progress",
-        "Nova continues to evolve. A deeper technical walkthrough, real screenshots, and repository links will be added to this case study."
+        "Nova continues to evolve. The workspace above shows its current interface. A deeper technical walkthrough and repository links will be added to this case study."
       ]
     ]
   },

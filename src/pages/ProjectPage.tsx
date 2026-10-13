@@ -20,10 +20,27 @@ export default function ProjectPage({
           <span key={s}>{s}</span>
         ))}
       </div>
-      <ProjectVisual kind={projectKey} />
+      {projectKey === "nova" && (
+        <a
+          className="button project-code-button"
+          target="_blank"
+          href="https://github.com/DanielCheeley/NovaAgentReAct"
+          aria-label="View the project code on GitHub (opens in a new tab)"
+        >
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-13-2 16" />
+          </svg>
+          <span>View the project code</span>
+          <span className="project-code-arrow" aria-hidden="true">
+            ↗
+          </span>
+        </a>
+      )}
+      <ProjectVisual kind={projectKey} fullView />
       <p className="illustration-note">
-        Conceptual project illustration. Product screenshots coming in the next
-        draft.
+        {projectKey === "nova"
+          ? "Nova’s workspace — a conversational interface with starting points for ideas, code, and writing."
+          : "Conceptual project illustration. Product screenshots coming in the next draft."}
       </p>
       <div className="case-sections">
         {project.sections.map(([title, body]) => (

@@ -297,45 +297,11 @@ em {
 .visual-link:hover .project-visual {
   transform: translateY(-5px);
 }
-.project-visual.nova {
-  background: #dfe5da;
-  color: #254637;
-}
 .visual-label {
   font-size: 8px;
   letter-spacing: 0.16em;
   position: relative;
   z-index: 1;
-}
-.nova-mark {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Georgia, serif;
-  font-size: 170px;
-  letter-spacing: -20px;
-}
-.nova-mark span {
-  font-size: 50px;
-  margin: 55px 0 0 20px;
-  color: #6d805b;
-}
-.orbit {
-  position: absolute;
-  border: 1px solid #84977450;
-  width: 270px;
-  height: 270px;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.orbit-two {
-  width: 360px;
-  height: 360px;
-  border-style: dashed;
 }
 .visual-bottom {
   position: absolute;
@@ -1043,4 +1009,97 @@ summary {
 }
 .social-links a:hover {
   color: var(--olive);
+}
+
+/* Nova keeps its own product palette inside the portfolio's warm frame. */
+.project-visual.nova {
+  background: #e4e2da;
+  padding: clamp(14px, 3vw, 28px);
+  display: flex;
+  align-items: center;
+}
+.nova-browser {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #cac8c0;
+  border-radius: 8px;
+  box-shadow: 0 12px 28px #27332818;
+}
+.nova-browser-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 34px;
+  padding: 0 12px;
+  background: #f3f1eb;
+  color: #66695f;
+  font-size: 10px;
+}
+.browser-dots {
+  display: flex;
+  gap: 5px;
+}
+.browser-dots i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #b9bbb1;
+}
+.nova-screenshot {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1.65;
+  background: #121214;
+}
+.nova-screenshot img {
+  position: absolute;
+  width: 185%;
+  max-width: none;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-57%, -50%);
+}
+.case-study .project-visual.nova.full-view {
+  aspect-ratio: auto;
+  max-width: none;
+}
+.nova.full-view .nova-screenshot {
+  aspect-ratio: 1905 / 940;
+}
+.nova.full-view .nova-screenshot img {
+  position: static;
+  width: 100%;
+  transform: none;
+}
+
+.project-code-button {
+  gap: 12px;
+  padding: 14px 20px;
+  background: #e9ecdf;
+  border: 1px solid #cbd3bf;
+  border-radius: 6px;
+  color: var(--pine);
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    transform 0.2s;
+}
+.project-code-button svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.project-code-button:hover {
+  background: #dfe5d5;
+  border-color: #8c9b7c;
+  transform: translateY(-2px);
+}
+.project-code-arrow {
+  margin-left: 10px;
+  color: #70804e;
+  font-size: 18px;
 }
