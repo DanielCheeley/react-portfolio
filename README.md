@@ -1,15 +1,52 @@
 # React Portfolio
 
-This is my new React portfolio.
+Daniel Cheeley's portfolio, built with React, TypeScript, and Vite.
 
 ## Development
-
-Install dependencies and start the Vite development server:
 
 ```sh
 npm install
 npm run dev
 ```
 
-Run the production build with `npm run build`, and check lint rules with
-`npm run lint`.
+On Windows PowerShell, use `npm.cmd` if script execution blocks `npm`.
+
+- `npm run build` checks TypeScript and creates the production build in `dist/`.
+- `npm run lint` checks the source with ESLint.
+- `npm run format:check` checks formatting; `npm run format` applies it.
+- `npm run preview` serves the production build locally.
+
+## Where to make changes
+
+```text
+src/
+  main.tsx                     React entry point
+  App.tsx                      Shared layout and page selection
+  pages/                       Home page composition and project case studies
+  sections/                    Hero, work, about, and background content
+  components/                  Shared header, footer, and illustrations
+  data/                        Project content and public asset URLs
+  hooks/usePortfolioNavigation.ts  Hash navigation, page titles, and scrolling
+  App.css                      Shared styles and responsive layouts
+public/
+  images/                      Portfolio photographs
+  documents/                   Downloadable resume
+```
+
+To update project descriptions or technology lists, edit `src/data/projects.ts`.
+To change homepage content, edit the matching component in `src/sections/`.
+Both project cards and case studies use the same project data and illustration.
+The header and contact footer appear on every page.
+
+## Navigation
+
+The site uses browser hashes without a routing dependency. Section links such as
+`#work` show the home page and scroll to that section. Project links use
+`#/projects/nova` and `#/projects/tracker`, opening a case study and scrolling to
+the top when the hash changes. The navigation hook also updates the document
+title and removes its event listener when unmounted. Unknown project hashes
+fall back to the home page.
+
+Keep existing section IDs and CSS class names when moving content so links,
+responsive layouts, and styling continue to work. Public asset URLs in
+`src/data/assets.ts` use Vite's base URL.
