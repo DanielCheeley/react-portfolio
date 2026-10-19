@@ -16,6 +16,20 @@ On Windows PowerShell, use `npm.cmd` if script execution blocks `npm`.
 - `npm run format:check` checks formatting; `npm run format` applies it.
 - `npm run preview` serves the production build locally.
 
+## GitHub Pages deployment
+
+In the GitHub repository, open **Settings → Pages** and set **Source** to
+**GitHub Actions**. Push these changes to `main` to trigger the deployment workflow,
+or run **Deploy portfolio to GitHub Pages** manually from the Actions tab.
+
+The workflow installs dependencies from the lockfile, builds the site, and deploys
+`dist/` to <https://danielcheeley.github.io/react-portfolio/>. Vite's `base` is set
+to `/react-portfolio/` so scripts, styles, images, and the resume load beneath the
+repository path. Hash navigation works without server rewrite rules.
+
+To check the production build locally, run `npm run build` and `npm run preview`,
+then open <http://localhost:4173/react-portfolio/>.
+
 ## Where to make changes
 
 ```text
