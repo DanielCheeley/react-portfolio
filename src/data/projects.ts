@@ -32,16 +32,20 @@ export const projects = {
     stack: ["MongoDB", "Express", "React", "Node.js"],
     sections: [
       [
-        "The idea",
-        "Create a deployed issue tracker with a full REST API as part of my school work at Ranken Technical College."
+        "Problem",
+        "Software issues need a shared place to be recorded and tracked instead of getting lost in scattered notes. For this school project at Ranken Technical College, the challenge was to build an issue tracker that connects a usable web interface to a REST API and stores issue data beyond a single browser session."
       ],
       [
-        "Across the stack",
-        "The application uses MongoDB, Express, React, and Node.js. It connects a frontend experience to API endpoints and persistent data."
+        "My Role",
+        "I worked across the MERN stack, connecting the React interface to the Node.js and Express backend and MongoDB persistence. My work included building the frontend, implementing the REST API, and deploying the application. This project gave me practice following data from the browser through the server to the database."
       ],
       [
-        "Current state",
-        "The project is deployed and still in development, with parts of the functionality unfinished. Screenshots, deployment links, and a precise breakdown of completed features will be added next."
+        "What I Built",
+        "I built and deployed a full-stack issue tracker using React, Node.js, Express, and MongoDB. The React frontend communicates with the Express REST API, while MongoDB provides persistent storage for issue data. The live application is hosted on Google Cloud Run and is available through the link above."
+      ],
+      [
+        "What I Will Improve",
+        "The application is still in development, and completing the unfinished functionality (mainly the react frontend) is my first priority. I would then improve form validation and make loading, empty, and error states clearer so users know whether an action succeeded. I would also add end-to-end tests for the main issue workflows to check that the interface, API, and database work together reliably."
       ]
     ]
   }

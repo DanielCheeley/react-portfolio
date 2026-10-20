@@ -36,11 +36,22 @@ export default function ProjectPage({
           </span>
         </a>
       )}
+      {projectKey === "tracker" && (
+        <a
+          className="button dark-button"
+          href="https://issue-tracker-979147028817.us-central1.run.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Try the live Issue Tracker (opens in a new tab)"
+        >
+          Try the live Issue Tracker ↗
+        </a>
+      )}
       <ProjectVisual kind={projectKey} fullView />
       <p className="illustration-note">
         {projectKey === "nova"
           ? "Nova’s workspace — a conversational interface with starting points for ideas, code, and writing."
-          : "Conceptual project illustration. Product screenshots coming in the next draft."}
+          : "Conceptual illustration of the project’s stack. Explore the deployed application using the live link above."}
       </p>
       <div className="case-sections">
         {project.sections.map(([title, body]) => (
