@@ -462,6 +462,49 @@ em {
   position: relative;
   padding: 0 65px 85px 0;
 }
+.atv-photo {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  max-width: 230px;
+  margin: 28px auto 0;
+}
+.mountain-photo {
+  position: relative;
+  width: 65%;
+  max-width: 290px;
+  margin: -55px 0 12px 9px;
+  padding: 9px;
+  background: var(--ivory);
+  transform: rotate(-6deg);
+  box-shadow: 0 6px 20px #233b3210;
+}
+.mountain-photo-crop {
+  overflow: hidden;
+}
+.mountain-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.mountain-photo figcaption {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.atv-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+.atv-photo figcaption {
+  order: -1;
+  margin: 0 0 10px;
+  font-size: 12px;
+  text-align: right;
+  color: var(--muted);
+}
 .photo-story figure {
   margin: 0;
 }
