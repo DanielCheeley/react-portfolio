@@ -7,7 +7,7 @@ export default function HeroSection() {
         <div className="portrait-wrap">
           <img
             className="portrait"
-            src={image("portrait")}
+            src={image("charcoal-suit")}
             alt="Daniel Cheeley wearing an olive jacket among green trees"
           />
           <Botanical />
