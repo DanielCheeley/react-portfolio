@@ -668,13 +668,23 @@ details img {
   background: var(--pine);
   color: var(--ivory);
 }
-@media (min-width: 900px) {
-  .hero-copy {
-    animation: arrive 0.7s ease both;
-  }
-  .portrait-wrap {
-    animation: arrive 0.9s ease both;
-  }
+.hero-copy > * {
+  animation: arrive 650ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.hero-copy > :nth-child(2) {
+  animation-delay: 60ms;
+}
+.hero-copy > :nth-child(3) {
+  animation-delay: 120ms;
+}
+.hero-copy > :nth-child(4) {
+  animation-delay: 180ms;
+}
+.hero-copy > :nth-child(5) {
+  animation-delay: 240ms;
+}
+.portrait-wrap {
+  animation: arrive 800ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 @keyframes arrive {
   from {
@@ -1145,4 +1155,70 @@ summary {
   margin-left: 10px;
   color: #70804e;
   font-size: 18px;
+}
+
+/* Small interaction cues keep the editorial layout feeling responsive. */
+.site-header nav a,
+.quiet-link,
+.text-link,
+.social-links a {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 0 1px;
+  transition:
+    color 220ms ease,
+    background-size 280ms ease;
+}
+:is(.site-header nav a, .quiet-link, .text-link, .social-links a):is(
+  :hover,
+  :focus-visible
+) {
+  background-size: 100% 1px;
+}
+.button {
+  transition:
+    transform 220ms ease,
+    background 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease;
+}
+.button:focus-visible {
+  box-shadow: 0 0 0 5px #a6b58230;
+}
+.button:active {
+  transform: translateY(0);
+}
+.project-visual {
+  transition:
+    transform 350ms ease,
+    box-shadow 350ms ease;
+}
+.visual-link:focus-visible .project-visual {
+  box-shadow: 0 12px 28px #173d3218;
+}
+.button > span,
+.text-link > span,
+.nav-contact > span {
+  display: inline-block;
+  transition: transform 250ms ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .visual-link:hover .project-visual {
+    box-shadow: 0 14px 30px #173d3218;
+  }
+  .button:hover > span:last-child,
+  .text-link:hover > span,
+  .nav-contact:hover > span {
+    transform: translateX(3px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .button:hover,
+  .visual-link:hover .project-visual,
+  .button:hover > span:last-child,
+  .text-link:hover > span,
+  .nav-contact:hover > span {
+    transform: none;
+  }
 }
