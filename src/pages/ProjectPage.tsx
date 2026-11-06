@@ -31,9 +31,7 @@ export default function ProjectPage({
             <path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-13-2 16" />
           </svg>
           <span>View the project code</span>
-          <span className="project-code-arrow" aria-hidden="true">
-            ↗
-          </span>
+          <span className="project-code-arrow" aria-hidden="true"></span>
         </a>
       )}
       {projectKey === "tracker" && (
@@ -44,7 +42,7 @@ export default function ProjectPage({
           rel="noopener noreferrer"
           aria-label="Try the live Issue Tracker (opens in a new tab)"
         >
-          Try the live Issue Tracker ↗
+          Try the live Issue Tracker
         </a>
       )}
       <ProjectVisual kind={projectKey} fullView />
@@ -62,7 +60,7 @@ export default function ProjectPage({
         ))}
       </div>
       <a className="button dark-button" href="#contact">
-        Let’s talk about the project ↗
+        Let’s talk about the project
       </a>
     </article>
   );

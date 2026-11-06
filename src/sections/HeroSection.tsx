@@ -36,7 +36,7 @@ export default function HeroSection() {
               target="_blank"
               rel="noreferrer"
             >
-              View résumé / CV ↗
+              View résumé / CV
             </a>
           </div>
           <div className="hero-meta">
