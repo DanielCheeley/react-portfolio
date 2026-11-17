@@ -28,7 +28,7 @@ export default function WorkSection() {
             <p className="eyebrow">{projects[kind].category}</p>
             <h3>
               <a href={`#/projects/${kind}`}>
-                {projects[kind].name} <span>↗</span>
+                {projects[kind].name}
               </a>
             </h3>
             <h4>{projects[kind].summary}</h4>

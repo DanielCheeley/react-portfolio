@@ -22,7 +22,7 @@ export default function SiteFooter() {
           target="_blank"
           rel="noreferrer"
         >
-          GitHub ↗
+          GitHub
         </a>
         <a
           className="quiet-link"
@@ -30,7 +30,7 @@ export default function SiteFooter() {
           target="_blank"
           rel="noreferrer"
         >
-          View résumé / CV ↗
+          View résumé / CV
         </a>
         <a
           className="quiet-link"
@@ -46,21 +46,21 @@ export default function SiteFooter() {
           target="_blank"
           rel="noreferrer"
         >
-          LinkedIn ↗
+          LinkedIn
         </a>
         <a
           href="https://www.facebook.com/daniel.cheeley.3/"
           target="_blank"
           rel="noreferrer"
         >
-          Facebook ↗
+          Facebook
         </a>
         <a
           href="https://www.instagram.com/daniel_cheeley/"
           target="_blank"
           rel="noreferrer"
         >
-          Instagram ↗
+          Instagram
         </a>
       </nav>
       <div className="footer-bottom">

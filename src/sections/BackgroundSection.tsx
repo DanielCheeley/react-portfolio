@@ -44,7 +44,7 @@ export default function BackgroundSection() {
           </p>
           <details>
             <summary>
-              See where it started <span>↗</span>
+              See where it started
             </summary>
             <img
               src={image("bike-before")}

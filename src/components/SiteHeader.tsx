@@ -9,7 +9,7 @@ export default function SiteHeader() {
         <a href="#about">About</a>
         <a href="#background">Background</a>
         <a className="nav-contact" href="#contact">
-          Get in touch <span>↗</span>
+          Get in touch
         </a>
       </nav>
     </header>

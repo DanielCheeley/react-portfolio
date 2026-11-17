@@ -101,9 +101,6 @@ em {
   border-bottom: 1px solid #a6b39a;
   padding: 9px 0;
 }
-.nav-contact span {
-  margin-left: 16px;
-}
 .hero {
   background: var(--pine);
   color: var(--ivory);
@@ -395,12 +392,6 @@ em {
   font-size: 42px;
   letter-spacing: -0.02em;
   margin-bottom: 14px;
-}
-.project-copy h3 span {
-  font-family: sans-serif;
-  font-size: 20px;
-  margin-left: 12px;
-  color: #70804e;
 }
 .project-copy h4 {
   font-size: 14px;
@@ -1198,8 +1189,7 @@ summary {
   box-shadow: 0 12px 28px #173d3218;
 }
 .button > span,
-.text-link > span,
-.nav-contact > span {
+.text-link > span {
   display: inline-block;
   transition: transform 250ms ease;
 }
@@ -1208,8 +1198,7 @@ summary {
     box-shadow: 0 14px 30px #173d3218;
   }
   .button:hover > span:last-child,
-  .text-link:hover > span,
-  .nav-contact:hover > span {
+  .text-link:hover > span {
     transform: translateX(3px);
   }
 }
@@ -1217,8 +1206,7 @@ summary {
   .button:hover,
   .visual-link:hover .project-visual,
   .button:hover > span:last-child,
-  .text-link:hover > span,
-  .nav-contact:hover > span {
+  .text-link:hover > span {
     transform: none;
   }
 }
